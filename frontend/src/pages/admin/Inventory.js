@@ -1,5 +1,14 @@
-import {useEffect,useState} from "react"; import api,{formatApiErrorDetail} from "@/lib/api"; import {Button} from "@/components/ui/button"; import {Input} from "@/components/ui/input"; import {Label} from "@/components/ui/label"; import {Dialog,DialogContent,DialogHeader,DialogTitle,DialogFooter} from "@/components/ui/dialog"; import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue} from "@/components/ui/select"; import {Table,TableBody,TableCell,TableHead,TableHeader,TableRow} from "@/components/ui/table"; import StatusBadge from "@/components/StatusBadge"; import {Plus,Trash2,Loader2} from "lucide-react"; import {toast} from "sonner";
-const EMPTY={library_id:"",book_id:"",total_copies:"",available_copies:""};
+import { useEffect, useState } from "react";
+import api, { formatApiErrorDetail } from "../../lib/api";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Label } from "../../components/ui/label";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "../../components/ui/dialog";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../components/ui/select";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../../components/ui/table";
+import StatusBadge from "../../components/StatusBadge";
+import { Plus, Trash2, Loader2 } from "lucide-react";
+import { toast } from "sonner";
 export default function Inventory(){
  const [inv,setInv]=useState([]),[books,setBooks]=useState([]),[libs,setLibs]=useState([]),[loading,setLoading]=useState(true),[open,setOpen]=useState(false),[form,setForm]=useState(EMPTY),[saving,setSaving]=useState(false);
  const load=async()=>{setLoading(true);try{const [i,b,l]=await Promise.all([api.get("/inventory"),api.get("/books"),api.get("/libraries")]);setInv(i.data);setBooks(b.data);setLibs(l.data)}finally{setLoading(false)}};useEffect(()=>{load()},[]);
