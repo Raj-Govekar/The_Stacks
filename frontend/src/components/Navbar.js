@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { BookMarked, LogOut, Shield } from "lucide-react";
-import { useAuth } from "@/context/AuthContext";
+import { useAuth } from "../context/AuthContext";
 
 export default function Navbar() {
   const { user, logout } = useAuth();
