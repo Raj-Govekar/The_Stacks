@@ -1,7 +1,7 @@
 import "./App.css";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-import {AuthProvider} from "@/context/AuthContext";
-import {ProtectedRoute,AdminRoute} from "@/components/ProtectedRoute";
+import { AuthProvider } from './context/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute';
 import {Toaster} from "@/components/ui/sonner";
 import Login from "@/pages/Login"; import Home from "@/pages/Home"; import LibraryDetail from "@/pages/LibraryDetail";
 import AdminLayout from "@/pages/admin/AdminLayout"; import Dashboard from "@/pages/admin/Dashboard"; import Libraries from "@/pages/admin/Libraries"; import Books from "@/pages/admin/Books"; import Inventory from "@/pages/admin/Inventory";
