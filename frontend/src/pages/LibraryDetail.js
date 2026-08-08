@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, BookOpen, Mail, MapPin, Phone, Loader2 } from "lucide-react";
-import api from "@/lib/api";
-import Navbar from "@/components/Navbar";
-import StatusBadge from "@/components/StatusBadge";
+import api from "../lib/api";
+import Navbar from "../components/Navbar";
+import StatusBadge from "../components/StatusBadge";
 
 export default function LibraryDetail() {
   const { id } = useParams();
