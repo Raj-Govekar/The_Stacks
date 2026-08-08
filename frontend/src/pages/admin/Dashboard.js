@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
 import api from "../../lib/api";
+=======
+import api from "../lib/api";
+>>>>>>> 4ae347f (Replace all @/ path aliases with relative paths)
 import { Library, BookCopy, Boxes, CheckCircle2, Loader2 } from "lucide-react";
 
 const Card=({icon:Icon,label,value,testid})=><div className="bg-white border border-line p-6 rounded-sm" data-testid={testid}><div className="w-10 h-10 bg-[#EAF3EB] flex items-center justify-center rounded-sm mb-4"><Icon className="w-5 h-5 text-green"/></div><p className="font-serif text-4xl font-bold">{value}</p><p className="text-sm text-muted mt-1">{label}</p></div>;
