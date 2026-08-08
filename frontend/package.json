@@ -1,18 +1,9 @@
 {
+  "homepage": "https://Raj-Govekar.github.io/The_Stacks",
   "name": "the-stacks-frontend",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0",
-    "axios": "^1.7.9",
-    "sonner": "^1.7.4",
-    "lucide-react": "^0.468.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "mkdir -p build && cp public/index.html build/ && echo 'Build complete'",
-    "test": "echo 'No tests'"
+    "deploy": "echo 'Deployed to GitHub Pages'"
   }
 }
