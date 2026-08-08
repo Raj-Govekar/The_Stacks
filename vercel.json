@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm install && npm run build 2>&1 | grep -v 'eslint' || echo 'Build completed'",
+  "buildCommand": "bash build.sh",
   "outputDirectory": "frontend/build",
   "env": {
     "REACT_APP_BACKEND_URL": "@react_app_backend_url",
