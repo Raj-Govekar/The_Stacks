@@ -1,6 +1,6 @@
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { BookMarked, LayoutDashboard, Library, BookCopy, Boxes, LogOut, Search } from "lucide-react";
-import { useAuth } from "@/context/AuthContext";
+import { useAuth } from "../../context/AuthContext";
 
 const NAV = [
   {to:"/admin",label:"Overview",icon:LayoutDashboard,testid:"admin-nav-overview"},
