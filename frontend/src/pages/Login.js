@@ -2,10 +2,11 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { BookOpen, Loader2 } from "lucide-react";
 import { toast } from "sonner";
-import { useAuth } from "../../context/AuthContext";
-import { Button } from "../../components/ui/button";
-import { Input } from "../../components/ui/input";
-import { Label } from "../../components/ui/label";
+import { useAuth } from "../context/AuthContext";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
+
 const BG = "https://images.unsplash.com/photo-1739918075668-fc7844c6d921?auto=format&fit=crop&w=1800&q=85";
 
 export default function Login() {
