@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Search, Library, ArrowRight, BookOpen, Loader2 } from "lucide-react";
-import api from "@/lib/api";
-import Navbar from "@/components/Navbar";
-import StatusBadge from "@/components/StatusBadge";
+import api from "../lib/api";
+import Navbar from "../components/Navbar";
+import StatusBadge from "../components/StatusBadge";
 
 function BookCard({ book }) {
   const status = book.total_copies === 0 ? "Not Available" : book.available_copies > 0 ? "Available" : "Borrowed";
