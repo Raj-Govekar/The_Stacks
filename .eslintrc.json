@@ -1,0 +1,4 @@
+{
+  "eslintIgnore": ["src/components/ui/**"],
+  "rules": {}
+}
