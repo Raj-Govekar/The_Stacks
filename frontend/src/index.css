@@ -1,27 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Work+Sans:wght@300;400;500;600&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --background: 40 40% 98%;
-  --foreground: 160 6% 12%;
-  --card: 0 0% 100%;
-  --border: 40 24% 88%;
-  --primary: 148 27% 24%;
-  --primary-foreground: 40 40% 98%;
-  --radius: .25rem;
+font-family: "Work Sans", sans-serif;
+color: #1c201f;
+background: #fdfbf7;
+font-synthesis: none;
+text-rendering: optimizeLegibility;
 }
 
-* { @apply border-line; }
-html { background: #FDFBF7; }
-body {
-  margin: 0;
-  background: #FDFBF7;
-  color: #1C201F;
-  font-family: "Work Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
+* {
+  box-sizing: border-box;
+  }
+
+html,
+body,
+#root {
+margin: 0;
+min-height: 100%;
 }
-h1,h2,h3,h4,.font-serif { font-family: "Playfair Display", serif; }
-::selection { background: #2C4C3B; color: #FDFBF7; }
+
+body {
+min-width: 320px;
+background: #fdfbf7;
+}
